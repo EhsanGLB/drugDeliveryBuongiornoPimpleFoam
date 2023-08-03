@@ -1,0 +1,3 @@
+viscosityModels/Brinkman/Brinkman.C
+
+LIB = $(FOAM_USER_LIBBIN)/libincompressibleTransportModelsNanoFluid
