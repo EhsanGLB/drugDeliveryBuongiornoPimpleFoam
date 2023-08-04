@@ -148,19 +148,19 @@ volScalarField Cp
     dimensionedScalar("Cp", dimSpecificHeatCapacity, SMALL)
 );
 
-Info<< "Reading field Db\n" << endl;
-volScalarField Db
+Info<< "Reading field DB\n" << endl;
+volScalarField DB
 (
     IOobject
     (
-        "Db",
+        "DB",
         runTime.timeName(),
         mesh,
         IOobject::NO_READ,
         IOobject::AUTO_WRITE
     ),
     mesh,
-    dimensionedScalar("Db", dimArea/dimTime, SMALL)
+    dimensionedScalar("DB", dimArea/dimTime, SMALL)
 );
 
 Info<< "Reading field DT\n" << endl;
