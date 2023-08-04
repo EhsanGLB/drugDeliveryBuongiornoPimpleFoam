@@ -3,9 +3,27 @@ This is a solver for drug delivery and unsteady forced convection heat transfer 
 
 
 ## Mathematical Relationships
-$$ h = U. \nabla U $$
+ $$ \nabla . U = 0 $$
 
-Which $h$ and $U$ are helicity and velocity vector, respectively.
+$$ {dU \over dt} + {(U . \nabla) U} = - {1 \over \rho_{nf}} \nabla p + \nu_{nf} \nabla . {\nabla U} $$
+
+$$ {dT \over dt} + {U . \nabla T} = \alpha_{nf} {\nabla}^2 T $$
+
+$$ {d \phi \over dt} + {U . \nabla \phi} = D_b {\nabla}^2 \phi + {D_T \over T} {\nabla}^2 T $$
+
+$$ D_b = {{k_B T} \over {3 \pi \mu_f \ d_{np}}} $$
+
+$$ D_T = 0.26 {{\kappa_f} \over {2 \kappa_f + \kappa_np}} {\mu_f \over \rho_f} \phi $$
+
+$$ \rho_{nf} = \rho_{np} \phi + \rho_f (1 - \phi) $$
+
+$$ C_{p,nf} = {{ \rho_{np} C_{p,np} \phi + \rho_f C_{p,f} (1 - \phi)} \over \rho_{nf}} $$
+
+$$ {\kappa_{nf} \over \kappa_f} = { {2 \kappa_f + \kappa_{np} + 2 \phi ( \kappa_{np} - \kappa_f)} \over {2 \kappa_f + \kappa_{np}- \phi ( \kappa_{np}- \kappa_f)} } $$
+
+$$ {\mu_{nf} \over \mu_f} = {1 \over (1 - \phi)^{2.5}} $$
+
+Which $U$, $p$, $T$, and $\phi$ are velocity vector, pressure, temperature, and nanoparticle concentration, respectively. And $\rho$, $C_p$, $\kappa$, $\mu$, $\nu$, and $\alpha$ are density, specific heat capacity, thermal conductivity, dynamic viscosity, kinematic viscosity, and thermal diffusivity, respectively. Also, subscription $f$, $np$, and $nf$ depict fluid, nanoparticle, and nanofluid, respectively. Moreover, $D_b$, $D_T$m and $d_{np}$ are Brownian diffusion, thermophoresis diffusion, and nanoparticle diameter, respectively.
 
 
 ## Installation
