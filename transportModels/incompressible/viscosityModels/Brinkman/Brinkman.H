@@ -63,6 +63,7 @@ class Brinkman
 
         dimensionedScalar muf_;
         dimensionedScalar rhof_;
+        dimensionedScalar rhonp_;
 
         volScalarField nu_;
 
