@@ -11,7 +11,7 @@ $$ {dT \over dt} + {U . \nabla T} = \alpha_{nf} {\nabla}^2 T $$
 
 $$ {d \phi \over dt} + {U . \nabla \phi} = D_b {\nabla}^2 \phi + {D_T \over T} {\nabla}^2 T $$
 
-$$ D_b = {{k_B T} \over {3 \pi \mu_f \ d_{np}}} $$
+$$ D_B = {{k_B T} \over {3 \pi \mu_f \ d_{np}}} $$
 
 $$ D_T = 0.26 {{\kappa_f} \over {2 \kappa_f + \kappa_np}} {\mu_f \over \rho_f} \phi $$
 
@@ -23,7 +23,7 @@ $$ {\kappa_{nf} \over \kappa_f} = { {2 \kappa_f + \kappa_{np} + 2 \phi ( \kappa_
 
 $$ {\mu_{nf} \over \mu_f} = {1 \over (1 - \phi)^{2.5}} $$
 
-Which $U$, $p$, $T$, and $\phi$ are velocity vector, pressure, temperature, and nanoparticle concentration, respectively. And $\rho$, $C_p$, $\kappa$, $\mu$, $\nu$, and $\alpha$ are density, specific heat capacity, thermal conductivity, dynamic viscosity, kinematic viscosity, and thermal diffusivity, respectively. Also, subscription $f$, $np$, and $nf$ depict fluid, nanoparticle, and nanofluid, respectively. Moreover, $D_b$, $D_T$m and $d_{np}$ are Brownian diffusion, thermophoresis diffusion, and nanoparticle diameter, respectively.
+Which $U$, $p$, $T$, and $\phi$ are velocity vector, pressure, temperature, and nanoparticle concentration, respectively. And $\rho$, $C_p$, $\kappa$, $\mu$, $\nu$, and $\alpha$ are density, specific heat capacity, thermal conductivity, dynamic viscosity, kinematic viscosity, and thermal diffusivity, respectively. Also, subscription $f$, $np$, and $nf$ depict fluid, nanoparticle, and nanofluid, respectively. Moreover, $D_B$, $D_T$m and $d_{np}$ are Brownian diffusion, thermophoresis diffusion, and nanoparticle diameter, respectively.
 
 
 ## Installation
