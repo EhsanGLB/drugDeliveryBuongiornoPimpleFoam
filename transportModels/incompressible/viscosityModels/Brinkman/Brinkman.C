@@ -50,9 +50,10 @@ namespace viscosityModels
 Foam::tmp<Foam::volScalarField>
 Foam::viscosityModels::Brinkman::calcNu() const
 {
-    const volScalarField& alpha = U_.mesh().lookupObject<volScalarField>("alpha");
+    const volScalarField& alpha_ = U_.mesh().lookupObject<volScalarField>("alpha");
+    volScalarField rho_ = alpha_*rhonp_+(1-alpha_)*rhof_;
 
-    return ( muf_/pow((1.0 - alpha), 2.5) )/rhof_;
+    return ( muf_/pow((1.0 - alpha_), 2.5) )/rho_;
 }
 
 
@@ -70,6 +71,7 @@ Foam::viscosityModels::Brinkman::Brinkman
     BrinkmanCoeffs_(viscosityProperties.subDict(typeName + "Coeffs")),
     muf_(viscosityProperties.lookup("mu_f")),
     rhof_(viscosityProperties.lookup("rho_f")),
+    rhonp_(viscosityProperties.lookup("rho_np")),
     nu_
     (
         IOobject
