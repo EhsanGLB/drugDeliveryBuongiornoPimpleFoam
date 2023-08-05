@@ -51,7 +51,7 @@ drugDeliveryBuongiornoPimpleFoam
 ```
 
 ## Activation
-Add "libBrinkmanViscosityModel.so" to case/system/controlDict
+Add "libBrinkmanVM.so" to case/system/controlDict
 
 
 ## References
