@@ -18,7 +18,7 @@ libs
 (
     "libincompressibleRASModels.so"
     "liblduSolvers.so"
-    "libincompressibleTransportModelsNanoFluid.so"
+    "libBrinkmanViscosityModel.so"
 );
 
 application     drugDeliveryBuongiornoPimpleFoam;
