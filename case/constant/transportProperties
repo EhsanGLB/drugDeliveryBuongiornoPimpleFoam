@@ -14,8 +14,8 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-transportModel  Brinkman;//Newtonian;
-BrinkmanCoeffs{}
+transportModel  BrinkmanVM;//Newtonian;
+BrinkmanVMCoeffs{}
 
 nu              nu [0 2 -1 0 0 0 0] 		8.53e-07;
 Pr		Pr [0 0 0 0 0 0 0] 		5.82;
